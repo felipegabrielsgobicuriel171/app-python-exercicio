@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    message = os.environ.get('WELCOME_MESSAGE', 'Olá! O aplicativo Python no Azure foi atualizado com sucesso!')
-    return f'<h1>{message}</h1><p>Testando alteração de dados.</p>'
+    message = os.environ.get('WELCOME_MESSAGE', 'Esta é a versão mais recente do projeto')
+    return f'<h1>{message}</h1><p>Terceira alteração de dados</p>'
 
 @app.route('/about')
 def about():
